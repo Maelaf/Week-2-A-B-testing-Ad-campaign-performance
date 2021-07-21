@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import pandas as pd
 
+def __init__(self):
+    pass
 def plot_hist(df: pd.DataFrame, column: str, color: str) -> None:
     plt.figure(figsize=(9, 7))
     sns.displot(data=df, x=column, color=color, kde=True, height=7, aspect=2)
